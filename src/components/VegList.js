@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { VegContext } from '../contexts/VegContext'
+import VegDetails from './VegDetails'
 
 const VegList = () => {
   const { veggies } = useContext(VegContext)
@@ -7,7 +8,7 @@ const VegList = () => {
     <div>
       <ul>
         {veggies.map((veg) => {
-          return <li>{veg.name}</li>
+          return <VegDetails veg={veg} key={veg.id} />
         })}
       </ul>
     </div>
