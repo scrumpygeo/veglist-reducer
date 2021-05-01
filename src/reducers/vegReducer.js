@@ -10,6 +10,8 @@ export const vegReducer = (state, action) => {
           id: uuidv4(),
         },
       ]
+    case 'REMOVE_VEG':
+      return state.filter((veg) => veg.id !== action.id)
     default:
       return state
   }
