@@ -21,9 +21,9 @@ code {
 }
 
 .navbar {
-  padding: 10px 20px;
+  padding: 10px 10px;
   text-align: center;
-  background: navy;
+  background: darkgreen;
 }
 
 .navbar h1 {
