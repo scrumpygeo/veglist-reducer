@@ -18,6 +18,7 @@ const NewVegForm = () => {
         placeholder='Add Veggie'
         value={name}
         onChange={(e) => setName(e.target.value)}
+        required
       />
       <input type='submit' value='Add Veggie' />
     </form>
