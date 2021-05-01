@@ -10,7 +10,7 @@ const VegContextProvider = (props) => {
     { id: 3, name: 'Aubergine' },
   ])
   return (
-    <VegContext.Provider value={{ veggies }}>
+    <VegContext.Provider value={{ veggies, dispatch }}>
       {props.children}
     </VegContext.Provider>
   )
